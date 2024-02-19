@@ -1,2 +1,7 @@
 # Bertot
-Pra engenharia de Software
+Na Google, dizemos por vezes que "a engenharia de software é a programação integrada ao longo do tempo". A programação é certamente uma parte importante da engenharia de software: afinal de contas, a programação é a forma como se gera novo software em primeiro lugar. Se aceitarmos esta distinção, a programação também se torna uma extensão da engenharia de software. É evidente que talvez seja necessário estabelecer uma distinção entre as tarefas de programação (desenvolvimento) e as tarefas de engenharia de software (desenvolvimento, modificação, manutenção). A adição do tempo acrescenta um novo e importante cêntimo
+
+Vemos três diferenças críticas entre a programação e a engenharia de software: tempo, escala e os compromissos em jogo. Num projeto de engenharia de software, os engenheiros precisam de estar mais preocupados com a passagem do tempo e a eventual necessidade de mudança. Numa organização de engenharia de software, precisamos de estar mais preocupados com a escala e a eficiência, tanto para o software que produzimos como para a organização que o está a produzir. Finalmente, como engenheiros de software, somos solicitados a tomar decisões mais complexas com resultados mais arriscados, muitas vezes baseados em estimativas imprecisas de tempo e crescimento
+
+Resposta:
+O que eu entendo sobre ser um engenheiro de software é além de ter uma alta capacidade lógica, criativa e uma noção de programação avançada também o dever de tomar decisões mais arriscadas e complexas em relação ao futuro dos projetos, isto é, precisam de uma visão futura apurada para criar soluções atualizadas e eficientes para problemas reais
