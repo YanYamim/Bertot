@@ -5,3 +5,11 @@ Vemos três diferenças críticas entre a programação e a engenharia de softwa
 
 Resposta:
 O que eu entendo sobre ser um engenheiro de software é além de ser uma pessoa com alta capacidade lógica, criativa e uma noção de programação avançada também o dever de lidar com projetos de pequena ou larga escala de complexidade. O tempo também é essencial, pois uma boa gestão de tempo permite os engenheiros de software a criar soluções atualizadas e eficientes para problemas reais. Além disso, o conceito de Trade-off é de grande importância para essa área de atuação, porque haverá situações onde são necessárias escolhas onde perde de um lado para ganhar outro, cabe aos profissionais da área de pontuarem as condições mais viáveis e imprencindíveis para o futuro do projeto. 
+
+Trade-offs:
+Um dos Trade-offs mais relacionados são de: 
+Desempenho e Custo - Essa relação envolve ter um software veloz e ágil ou a busca por alto desempenho pode implicar em hardware mais potente, ou seja, envolverá mais pessoas, mais recursos e mais custo para bancar com esse projeto
+
+Portabilidade e Funcionalidade - A capacidade de rodar em diferentes plataformas e dispositivos expandindo o alcance do software ou implementar todas as funcionalidades desejadas; pode tornar o software menos portátil, limitando sua utilização mas muitas funcionalidades pode torná-lo menos acessível a alguns dispostivos
+
+Testes e Tempo de lançamento -  Aprofundar a bateria de testes garante maior qualidade e confiabilidade do software, mas testes extensos podem atrasar o lançamento do software, impactando o tempo de retorno do investimento e a competitividade do produto, porém Lançar um software rapidamente pode apresentar bugs e falhas, enquanto testes rigorosos podem atrasar o lançamento e frustrar stakeholders.
