@@ -13,3 +13,24 @@ Desempenho e Custo - Essa relação envolve ter um software veloz e ágil ou a b
 Portabilidade e Funcionalidade - A capacidade de rodar em diferentes plataformas e dispositivos expandindo o alcance do software ou implementar todas as funcionalidades desejadas; pode tornar o software menos portátil, limitando sua utilização mas muitas funcionalidades pode torná-lo menos acessível a alguns dispostivos
 
 Testes e Tempo de lançamento -  Aprofundar a bateria de testes garante maior qualidade e confiabilidade do software, mas testes extensos podem atrasar o lançamento do software, impactando o tempo de retorno do investimento e a competitividade do produto, porém Lançar um software rapidamente pode apresentar bugs e falhas, enquanto testes rigorosos podem atrasar o lançamento e frustrar stakeholders.
+
+Estilos de arquitetura e seus softwares:
+
+1) Layered Architecture Style (Arquitetura em Camadas): Java EE (Enterprise Edition)
+  É uma plataforma robusta para o desenvolvimento de aplicações empresariais, oferecendo uma arquitetura em camadas que promove a modularidade e a manutenibilidade do código.
+
+2) Pipeline Architecture Style (Arquitetura de Pipeline): Jenkins
+   É uma ferramenta essencial para integração contínua e entrega contínua, usando arquitetura de pipeline para automatizar o processo de desenvolvimento, desde a compilação até o deploy.
+
+3) Microkernel Architecture Style (Arquitetura de Microkernel): MINIX
+ Um sistema operacional conhecido por sua abordagem de microkernel, visando simplicidade e confiabilidade, ao manter o núcleo mínimo e mover funcionalidades para processos de usuário.
+
+4) Service-Based Architecture Style (Arquitetura Baseada em Serviços): Salesforce
+   Salesforce é uma plataforma líder em CRM que utiliza uma arquitetura baseada em serviços, permitindo a integração flexível de diferentes módulos e funcionalidades.
+   
+5) Event-Driven Architecture Style (Arquitetura Orientada a Eventos): Apache Kafka
+ O Kafka é uma poderosa plataforma de streaming de dados, construída com uma arquitetura orientada a eventos. Ela facilita o processamento em tempo real e a comunicação assíncrona em grande escala.
+
+6) Microservices Architecture Style (Arquitetura de Microsserviços): Netflix
+  A Netflix, um dos serviços de streaming mais famosos do mundo,  é um exemplo notável de uma arquitetura de microsserviços, permitindo escalabilidade e manutenção eficiente por meio da distribuição de funcionalidades em serviços independentes.
+
