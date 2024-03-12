@@ -58,3 +58,10 @@ Estilos de arquitetura e seus softwares:
 
       Ruim: A performance complica as arquiteturas de microsserviços, especialmente em sistemas onde a comunicação entre os serviços é frequente. A latência de rede e o overhead da comunicação entre serviços podem impactar o desempenho global do sistema. Em sistemas com uma arquitetura de microsserviços, a latência introduzida pela comunicação entre serviços, por exemplo, através de APIs HTTP, pode afetar a performance global, exigindo uma cuidadosa consideração do design e otimizações quando necessário.
 
+Os trade-offs, positivos e negativos, para um sistema de uma biblioteca com uma arquitetura de microsservições podem se basear em:
+
+ Escalabilidade(positivo): É simplificada, pois cada microsserviço pode ser escalado independentemente, permitindo lidar com cargas específicas de maneira mais eficiente. Porém a comunicação entre microsserviços, se não otimizada, pode introduzir latência e impactar a performance global do sistema.
+
+ Perfomance(negativo): A escalabilidade e modularidade podem levar a um aumento na performance em alguns casos. 
+
+ Modularidade(positivo): É vantajiso em arquiteturas de microsserviços para bibliotecas. Cada funcionalidade (como cadastro de livros, empréstimos, etc.) é tratada por um microsserviço independente, facilitando a manutenção e evolução isolada de cada componente. 
