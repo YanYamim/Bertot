@@ -1,21 +1,19 @@
-import java.util.Scanner;
-
 public class Planos {
     public enum TipoPlano {
         CONVENCIONAL,
-        PREMUIM
+        PREMIUM
     }
 
     private TipoPlano tipo;
     private double preco;
-    private int maxLivros;
-    private double promocaoEspecial;
+    private int maxEspacos;
+    private boolean agendaInclusa;
 
-    public Planos(TipoPlano tipo, double preco, int maxLivros, double promocaoEspecial) {
+    public Planos(TipoPlano tipo, double preco, int maxEspacos, boolean agendaInclusa) {
         this.tipo = tipo;
         this.preco = preco;
-        this.maxLivros = maxLivros;
-        this.promocaoEspecial = promocaoEspecial;
+        this.maxEspacos = maxEspacos;
+        this.agendaInclusa = agendaInclusa;
     }
 
     public TipoPlano getTipo() {
@@ -26,44 +24,30 @@ public class Planos {
         return preco;
     }
 
-    public int getMaxLivros() {
-        return maxLivros;
+    public int getMaxEspacos() {
+        return maxEspacos;
     }
 
-    public double getPromocaoEspecial() {
-        return promocaoEspecial;
+    public boolean getAgendaInclusa() {
+        return agendaInclusa;
     }
 
-    public void escolhaPlano(String tipo, double preco, int maxLivros, double promocaoEspecial) {
+    public String escolhaPlano(String tipo, double preco, int maxEspacos, boolean agendaInclusa) {
         TipoPlano tipoPlano;
 
         if (tipo.equalsIgnoreCase("CONVENCIONAL - Gratuito")) {
             tipoPlano = TipoPlano.CONVENCIONAL;
-
-            System.out.println("Benefícios do plano mensal:");
-            System.out.println("- Direito a 7 dias de conta premium grátis -");
-            System.out.println("- Acesso a biblioteca online ilimitada");
-            System.out.println("- Direito a alugar quantos livros quiser por até 2 semanas cada");
-            System.out.println("- Avisos prévios de livros que já estão disponíveis");
-
+            return "Benefícios do plano mensal:\n" +
+                    "- Direito a 7 dias de conta premium grátis -\n" +
+                    "- Acesso a um inventário possível de armazenar até 50 espaços de itens";
         } else if (tipo.equalsIgnoreCase("PREMIUM - 16,90/mês")) {
-            tipoPlano = TipoPlano.PREMUIM;
-
-            System.out.println("Benefícios do plano anual:");
-            System.out.println("- Além dos benefícios convencionais");
-            System.out.println("- Acesso a sorteios exclusivos");
-            System.out.println("- Desconto em livros físicos");
-            System.out.println("- Poder alugar os livros por até 2 meses");
+            tipoPlano = TipoPlano.PREMIUM;
+            return "Benefícios do plano anual:\n" +
+                    "- Além dos benefícios convencionais\n" +
+                    "- Inventário de espaço infinito\n" +
+                    "- Agenda também inclusa";
         } else {
-            System.out.println("Tipo de plano inválido.");
-            return;
+            return "Tipo de plano inválido.";
         }
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Qual será sua escolha de plano? ");
-        String escolha = scanner.nextLine();
-        scanner.close();
-
-        System.out.println("Plano " + tipoPlano + " escolhido.");
     }
 }
