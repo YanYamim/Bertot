@@ -1,6 +1,6 @@
 package org.Inventario;
 
-class Lembrete {
+public class Lembrete {
     private String titulo;
     private String data;
     private String texto;

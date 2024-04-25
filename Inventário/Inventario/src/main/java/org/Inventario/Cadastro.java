@@ -8,6 +8,6 @@ public class Cadastro {
 
     public static String cadastrarCliente(Cliente cliente) {
         clientes.add(cliente);
-        return cliente.getNome() + " cadastrado com sucesso";
+        return cliente.getNome() + " foi cadastrado com sucesso";
     }
 }

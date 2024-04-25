@@ -16,7 +16,7 @@ public class Agenda {
         return titulo + " adicionado à agenda";
     }
 
-    public String listarLembretes() {
+    public static String listarLembretes() {
         if (lembretes.isEmpty()) {
             return "Lista de lembretes vazia";
         } else {
@@ -28,7 +28,7 @@ public class Agenda {
         }
     }
 
-    public String removerLembrete(String titulo) {
+    public static String removerLembrete(String titulo) {
         for (Lembrete lembrete : lembretes) {
             if (lembrete.getTitulo().equals(titulo)) {
                 lembretes.remove(lembrete);

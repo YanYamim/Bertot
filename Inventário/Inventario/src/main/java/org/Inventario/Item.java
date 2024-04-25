@@ -1,6 +1,6 @@
 package org.Inventario;
 
-class Item {
+public class Item {
     private String nome;
     private String espaco;
     private int quantidade;
