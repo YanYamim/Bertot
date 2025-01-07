@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.Backend.Interfaces.LancheRepository;
-import com.example.Backend.Lanches.Lanche;
 
 @Service
 public class LancheService {
@@ -14,7 +13,7 @@ public class LancheService {
     public LancheService(LancheRepository lancheRepository) {
         this.lancheRepository = lancheRepository;
     }
-
+    /*
     public Lanche cadastrarLanche (Long id, String nome) {
         Lanche novoLanche = new Lanche();
         novoLanche.setId(id);
@@ -23,5 +22,5 @@ public class LancheService {
         Lanche lancheSalvo = lancheRepository.save(novoLanche);
         return lancheSalvo;
     }
-    
+    */    
 }
