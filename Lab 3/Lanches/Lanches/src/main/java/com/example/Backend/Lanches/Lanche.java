@@ -1,4 +1,4 @@
-package com.example.Lanches;
+package com.example.Backend.Lanches;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

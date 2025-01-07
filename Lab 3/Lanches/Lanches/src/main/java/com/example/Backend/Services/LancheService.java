@@ -1,10 +1,10 @@
-package com.example.Services;
+package com.example.Backend.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.Interfaces.LancheRepository;
-import com.example.Lanches.Lanche;
+import com.example.Backend.Interfaces.LancheRepository;
+import com.example.Backend.Lanches.Lanche;
 
 @Service
 public class LancheService {

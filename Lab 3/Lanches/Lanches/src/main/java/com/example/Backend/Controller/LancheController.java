@@ -1,10 +1,10 @@
-package com.example.Controller;
+package com.example.Backend.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Interfaces.LancheRepository;
-import com.example.Services.LancheService;
+import com.example.Backend.Interfaces.LancheRepository;
+import com.example.Backend.Services.LancheService;
 
 @Controller
 @RequestMapping("/lanches")

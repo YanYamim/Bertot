@@ -1,4 +1,4 @@
-package com.example.Interfaces;
+package com.example.Backend.Interfaces;
 
 public interface LancheRepository  {
     
