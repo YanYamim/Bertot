@@ -1,0 +1,8 @@
+{
+    "type": "java",
+    "name": "Launch Spring Boot App",
+    "request": "launch",
+    "mainClass": "com.example.Backend.LanchesApplication",
+    "projectName": "Lanches"
+  }
+  
