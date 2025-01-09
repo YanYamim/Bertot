@@ -25,13 +25,13 @@ public class Lanche {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_lan")
-    private Long idLanche;
+    private Long lancheId;
 
     @Column(name = "nome_lan")
-    private String nomeLanche;
+    private String lancheNome;
 
     @Column(name = "tipo_lan", nullable = false)
-    private String tipoLanche;
+    private String lancheTipo;
 
     @ManyToMany(mappedBy = "lanches")
     List<Cliente> clientes;

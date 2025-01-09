@@ -32,6 +32,7 @@ public class Cliente {
     @Column(name = "nome_cli")
     private String nomeCliente;
 
+    // O joinTable é para mapear uma tabela de junção, nesse caso será de Cliente com Lanche
     @ManyToMany
     @JoinTable(
                 name = "Cliente_Lanche",

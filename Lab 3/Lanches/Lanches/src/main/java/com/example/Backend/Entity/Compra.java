@@ -30,6 +30,7 @@ public class Compra {
     @Column(name = "data_comp")
     private Date dataCompra;
 
+    // Vários clientes podem comprar vários lanches, mas aqui é ManyToOne porque cada Compra pertence a um cliente que está relacionado a um lanche
     @ManyToOne
     private Cliente cliente;
     
