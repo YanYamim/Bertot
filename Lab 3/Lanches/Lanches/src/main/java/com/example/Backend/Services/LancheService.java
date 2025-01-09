@@ -1,5 +1,7 @@
 package com.example.Backend.Services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,5 +25,9 @@ public class LancheService {
         return lancheSalvo;
     }
 
+    public List<Lanche> listarLanche() {
+        List<Lanche> lanches = lancheRepository.findAll();
+        return lanches;
+    }
 
 }
