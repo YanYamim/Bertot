@@ -27,10 +27,10 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_cli")
-    private Long id_cli;
+    private Long clienteId;
 
     @Column(name = "nome_cli")
-    private String nomeCliente;
+    private String clienteNome;
 
     // O joinTable é para mapear uma tabela de junção, nesse caso será de Cliente com Lanche
     @ManyToMany
