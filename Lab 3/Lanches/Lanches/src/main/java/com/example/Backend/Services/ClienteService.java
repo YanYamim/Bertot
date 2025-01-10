@@ -1,5 +1,7 @@
 package com.example.Backend.Services;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.example.Backend.Entity.Cliente;
@@ -18,5 +20,10 @@ public class ClienteService {
         novoCliente.setClienteNome(clienteNome);
         Cliente clienteSalvo = clienteRepository.save(novoCliente);
         return clienteSalvo; 
+    }
+
+    public List<Cliente> listarCliente() {
+        List<Cliente> clientes = clienteRepository.findAll();
+        return clientes;
     }
 }

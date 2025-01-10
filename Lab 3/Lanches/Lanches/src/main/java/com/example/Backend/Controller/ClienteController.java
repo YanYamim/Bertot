@@ -1,7 +1,10 @@
 package com.example.Backend.Controller;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,5 +28,11 @@ public class ClienteController {
         
         Cliente clienteSalvo = clienteService.cadastrarCliente(dados.getClienteNome());
         return ResponseEntity.ok(clienteSalvo);
+    }
+
+    @GetMapping("listar")
+    public ResponseEntity<List<Cliente>> listarCliente() {
+        List<Cliente> clientes = clienteService.listarCliente();
+        return ResponseEntity.ok(clientes);
     }
 }
