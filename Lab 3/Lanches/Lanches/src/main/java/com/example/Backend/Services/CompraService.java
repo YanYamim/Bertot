@@ -1,6 +1,6 @@
 package com.example.Backend.Services;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,9 +19,11 @@ public class CompraService {
         this.compraRepository = compraRepository;
     }
 
-    public Compra realizarCompra(Long compraId, Date compraData, Cliente cliente, Lanche lanche) {
+    public Compra realizarCompra(Cliente cliente, Lanche lanche) {
         Compra novaCompra = new Compra();
-        Compra compraFeita = compraRepository.save(novaCompra);
-        return compraFeita;
+        novaCompra.setCliente(cliente);
+        novaCompra.setLanche(lanche);
+        novaCompra.setCompraData(LocalDate.now());
+        return compraRepository.save(novaCompra);
     }
 }

@@ -20,10 +20,14 @@ public class CompraController {
         this.compraService = compraService;
     }
 
-    @PostMapping()
+    @PostMapping("realizar")
     public ResponseEntity<Compra> realizarCompra(@RequestBody Compra dados) {
 
-        Compra compraFeita = compraService.realizarCompra(dados.getCompraId(), dados.getCompraData(), dados.getCliente(), dados.getLanche());
+        if(dados.getCliente() == null || dados.getLanche() == null) {
+            return ResponseEntity.badRequest().build();
+        } 
+
+        Compra compraFeita = compraService.realizarCompra(dados.getCliente(), dados.getLanche());
         return ResponseEntity.ok(compraFeita);
     }
 }

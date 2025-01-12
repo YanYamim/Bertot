@@ -1,6 +1,6 @@
 package com.example.Backend.Entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,7 +28,7 @@ public class Compra {
     private Long compraId;
     
     @Column(name = "data_comp")
-    private Date compraData;
+    private LocalDate compraData;
 
     // Vários clientes podem comprar vários lanches, mas aqui é ManyToOne porque cada Compra pertence a um cliente que está relacionado a um lanche
     @ManyToOne
