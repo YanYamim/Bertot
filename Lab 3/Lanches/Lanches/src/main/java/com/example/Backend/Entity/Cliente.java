@@ -2,6 +2,8 @@ package com.example.Backend.Entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -34,6 +36,7 @@ public class Cliente {
 
     // O joinTable é para mapear uma tabela de junção, nesse caso será de Cliente com Lanche
     @ManyToMany
+    @JsonIgnoreProperties("clientes")
     @JoinTable(
                 name = "Cliente_Lanche",
                 joinColumns = @JoinColumn(name = "id_cli"),

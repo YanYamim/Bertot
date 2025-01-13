@@ -2,6 +2,8 @@ package com.example.Backend.Entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -34,6 +36,7 @@ public class Lanche {
     private String lancheTipo;
 
     @ManyToMany(mappedBy = "lanches")
+    @JsonIgnore
     List<Cliente> clientes;
 
 }
