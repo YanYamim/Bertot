@@ -17,7 +17,7 @@
                         v-model="lancheNovo.lancheTipo"
                         placeholder="Tipo do Lanche"
                     />
-                    <button class="botao-salvar" type="submit">Salvar</button>
+                    <button class="botao-salvar" @click="salvarLanche">Salvar</button>
                     <button class="botao-cancelar" @click.prevent="cancelarCadastro">Cancelar</button>
                 </form>
             </div>
