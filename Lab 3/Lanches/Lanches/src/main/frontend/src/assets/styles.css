@@ -1,0 +1,134 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botões */
+.botao-cadastrar-lanche,
+.botao-salvar,
+.botao-cancelar,
+.botao-compra,
+.botao-salvar-lanche,
+.botao-cancelar-lanche {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-cadastrar-lanche:hover,
+.botao-salvar:hover,
+.botao-cancelar:hover,
+.botao-compra:hover,
+.botao-salvar-lanche:hover,
+.botao-cancelar-lanche:hover {
+    background-color: #0056b3;
+}
+
+.botao-cancelar,
+.botao-cancelar-lanche {
+    background-color: #dc3545;
+}
+
+.botao-cancelar:hover,
+.botao-cancelar-lanche:hover {
+    background-color: #a71d2a;
+}
+
+/* Estilos para o componente Cadastrar Lanche */
+.lanche-cadastrados {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-cadastro {
+    margin-top: 15px;
+}
+
+.campo-nome-cadastro,
+.campo-tipo-cadastro {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para o componente Listar Lanche */
+.listar-lanche {
+    margin: 20px;
+}
+
+.lanche-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lanche-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.lanche-actions {
+    margin-top: 10px;
+}
+
+/* Estilos para o componente Edição Lanche */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.modal-titulo {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.modal-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
