@@ -27,6 +27,28 @@ export default {
             tags: [],
             tagEmEdit: null
         }
+    },
+
+    methods: {
+        adicionarLanche(lanche) {
+            this.lanche.push(lanche);
+        },
+
+        iniciarLanche(lanche) {
+            this.lancheEmEdit = { ... lanche };
+        },
+
+        salvarEdicao() {
+            const index = this.lanches.findIndex(lanche => lanche.id === lancheEditado.id);
+            if (index !== -1) {
+                this.$set(this.lanches, index, lancheEditado);
+            }
+            this.fecharModal();
+        },
+
+        fecharModal() {
+            this.lancheEmEdit = null;
+        }
     }
 }
 </script>

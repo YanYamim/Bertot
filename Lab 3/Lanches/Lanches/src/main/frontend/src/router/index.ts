@@ -1,16 +1,17 @@
-import LanchesView from "@/views/LanchesView.vue";
-import { compile } from "vue";
 import { createRouter, createWebHistory } from 'vue-router';
+import LanchesView from '@/views/LanchesView.vue';
+
+const routes = [
+    {
+        path: '/lanches',       
+        name: 'lanches',        
+        component: LanchesView 
+    }
+];
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-    {
-        path: '/lanches',
-        name: 'lanches',
-        component: LanchesView
-    }
-    ]
+    routes
 });
 
 export default router;
