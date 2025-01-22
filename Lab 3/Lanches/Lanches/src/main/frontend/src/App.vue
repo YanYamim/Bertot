@@ -1,14 +1,28 @@
 <template>
   <div id="app">
-    <h1>Gerenciador de Lanches</h1>
-    <router-view />
+    <div class="main-content">
+
+      <header class="header">
+        <h1>Gerenciador de Lanches</h1>
+        <ListarLanches :lanches="lanches" @editar-lanche="edtarLanche"/>
+      </header>
+
+      <RouterView />
+    </div>
   </div>
 </template>
 
 <script>
+import { RouterView } from 'vue-router';
+import ListarLanches from './components/ListarLanches.vue';
+
 export default {
   name: "App",
-};
+  components: {
+    ListarLanches
+  }
+}
+
 </script>
 
 
