@@ -3,7 +3,7 @@ import LanchesView from '@/views/LanchesView.vue';
 
 const routes = [
     {
-        path: '/lanches',       
+        path: '/',       
         name: 'lanches',        
         component: LanchesView 
     }

@@ -15,8 +15,6 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
     data() {
         return {
@@ -25,21 +23,23 @@ export default {
     },
 
     mounted() {
-        this.buscarLanches();
+        this.listarLanches();
     },
 
-    methods: {
-        buscarLanches() {
-            axios.get('http://localhost:8080/lanches/listar')
-                .then(response => {
-                    this.lanches = response.data;
-                    console.log(this.lanches[0]);
-                })
-                .catch(error => {
-                    console.error('Erro ao achar lanches: ', error);
-                });
+    async listarLanches() {
+        try {
+            const response = await fetch('http://localhost:8080/lanches/listar');
+            if (!response.ok) throw new Error("Erro ao listar lanches");
+            const lanches = await response.json();
+            console.log(lanches);
+            return lanches;
+        } catch (error) {
+            console.error(error);
+            alert("Erro ao carregar a lista de lanches");
         }
     }
+
 }
+
 
 </script>
