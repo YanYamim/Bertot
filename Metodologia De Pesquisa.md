@@ -1,7 +1,7 @@
 # Yan Yamim
 
 Introdução
-Sou Yan
+Sou Yan e atuo como desenvolvedor de software com experiẽncia em Java, Python e SQL, focando mais no desenvolvimento de API's e modelagem de dados. Além disso, tenho afinidade com alguns frameworks como SpringBoot e Vue.js e usando Docker para melhor integração de projetos. Meu foco está na criação de soluções escaláveis e eficientes, utilizando boas práticas de desenvolvimento e arquitetura de software. Atualmente, estou no início de carreira e cursando a faculdade de Banco de Dados pela Fatec de São José dos Campos mas sempre disposto a novas oportunidades.
 
 Contatos
   https://github.com/YanYamim
