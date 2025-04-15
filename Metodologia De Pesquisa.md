@@ -84,3 +84,6 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
   <li> Resiliência - Mesmo que em momentos de muita dificuldade, no fim sempre eram feitas as entregas </li>
  <li> Adaptabilidade - Precisei me adaptar a novas tecnologias nas quais até então não conhecia ou tinha domínio </li>
 </ul>
+
+### Dificuldades enfrentadas
+Por ter sido a primeira experiência no desenvolvimento de API com cliente de verdade, um ambiente de trabalho mais próximo do profissional senti muita dificuldade e dúvida se conseguiria entregar todas as demandas. Embora essas adversidades consegui aprender a como estar em um ambiente de trabalho organizado, como realizar de forma mais eficiente desenvolvimento de controllers, services, manipulação de banco de dados e criação de páginas web usando frameworks.
