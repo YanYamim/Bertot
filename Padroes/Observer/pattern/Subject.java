@@ -1,3 +1,5 @@
+// Define quem pode dar attach e detach como notificar os observers
+
 package Observer.pattern;
 
 public interface Subject {

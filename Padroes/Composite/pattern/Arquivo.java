@@ -1,3 +1,5 @@
+// Implementação do método mostrar()
+
 package Composite.pattern;
 
 public class Arquivo implements Component {

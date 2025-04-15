@@ -1,3 +1,5 @@
+// Pasta é o Composite onde pode conter todos os componentes armazenados por uma lista
+
 package Composite.pattern;
 
 import java.util.ArrayList;

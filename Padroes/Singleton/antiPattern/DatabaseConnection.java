@@ -11,6 +11,7 @@ public class DatabaseConnection {
         System.out.println("Conexão com o banco de dados estabelecida.");
     }
 
+    // Isso permite criar instâncias diferentes quebrando a regra do Singleton
     public static DatabaseConnection getInstance() {
         if (instance == null) {
             instance = new DatabaseConnection();

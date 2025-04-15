@@ -1,3 +1,5 @@
+// Armazena a temperatura, guarda os observers numa lista e notifica eles quando a temperatura muda
+
 package Observer.pattern;
 
 import java.util.ArrayList;

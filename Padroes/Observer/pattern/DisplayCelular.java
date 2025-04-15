@@ -1,3 +1,5 @@
+// observadores que reagem à mudança de temperatura. Cada um tem sua própria forma de exibir a informação.
+
 package Observer.pattern;
 
 public class DisplayCelular implements Observer {

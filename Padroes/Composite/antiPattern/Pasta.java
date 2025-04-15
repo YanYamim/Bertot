@@ -1,3 +1,6 @@
+// O fato de não ter uma interface, um Object na lista e verificações instanceof violam o padrão Composite,
+// esse último também viola o conceito de polimorfismo
+
 package Composite.antiPattern;
 
 import java.util.ArrayList;

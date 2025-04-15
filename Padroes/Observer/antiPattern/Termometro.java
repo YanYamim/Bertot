@@ -1,3 +1,5 @@
+// Esse viola o padrão observer por usar Object na lista e instanceof como verificações
+
 package Observer.antiPattern;
 
 import java.util.ArrayList;
@@ -7,10 +9,11 @@ public class Termometro {
     private double temperatura;
     private List<Object> observers = new ArrayList<>();
 
+    // Esse método faz duas coisas, notificar observers (papel do Observer) e salva no banco
     public void setTemperatura(double temperatura) {
         this.temperatura = temperatura;
         notificarObservers();
-        salvarTemperaturaNoBanco(); // Violação do SRP
+        salvarTemperaturaNoBanco();
     }
 
     public void attach(Object observer) {
