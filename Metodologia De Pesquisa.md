@@ -20,7 +20,7 @@ Sou Yan e atuo como desenvolvedor de software com experiẽncia em Java, Python 
 
 ### Meus Principais Conhecimentos
 
-Meus principais conhecimento estão no Java, juntamente com o SpringBoot e SQL. Meu desejo maior domínio na linguagem Python, seus frameworks como Django e JavaScript
+Meus principais conhecimento estão no Java, juntamente com o SpringBoot e SQL. Meu desejo maior domínio na linguagem Python, seus frameworks como Django 
 
 ## Meus Projetos
 
