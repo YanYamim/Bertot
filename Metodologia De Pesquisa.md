@@ -49,6 +49,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
 ### Contribuições Pessoais
 <ul>
 <li>Método responsável pelo cadastro de Tags e de Portais</li> 
+<li>Página web que cadastra Tags e de Portais</li> 
 <li>possibilidade de relacionar várias tags a um portal de notícia tanto no cadastro quanto na edição</li> 
 <li>correção de bug envolvento registro de portais</li> 
 <li>exibição do conteúdo da notícia através de um pop-up</li>
@@ -78,12 +79,11 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
 ###
 
 ### Soft Skills
-<ul>
-  <li>Comunicação - Precisei exercitar essa habilidade para pedir ajuda em momentos de dificuldade </li>
-  <li> Trabalho em Equipe - O ato de trabalhar em equipe foi crucial para o desenvolvimento da api </li>
-  <li> Resiliência - Mesmo que em momentos de muita dificuldade, no fim sempre eram feitas as entregas </li>
- <li> Adaptabilidade - Precisei me adaptar a novas tecnologias nas quais até então não conhecia ou tinha domínio </li>
-</ul>
+<ul> 
+  <li><strong>Comunicação</strong> – Durante o desenvolvimento do projeto, enfrentei situações técnicas complexas que exigiram clareza na comunicação. Para superar essas dificuldades, procurei colegas mais experientes, explicando de forma objetiva os problemas enfrentados e ouvindo atentamente sugestões e feedbacks. Essa troca constante foi essencial para encontrar soluções eficientes e manter a fluidez no andamento da equipe.</li> 
+  <li><strong>Trabalho em Equipe</strong> – A colaboração entre os membros foi fundamental para o sucesso da API. Participei ativamente de reuniões de alinhamento, dividi responsabilidades com clareza e mantive um canal aberto para revisões de código e suporte mútuo. A soma de conhecimentos e o respeito pelas ideias dos colegas resultaram em um desenvolvimento mais ágil e com maior qualidade técnica.</li> 
+  <li><strong>Resiliência</strong> – Enfrentei prazos curtos, bugs inesperados e dificuldades de compreensão de requisitos. Mesmo diante desses obstáculos, mantive o foco e a motivação. Organizei prioridades, reestruturei tarefas e, com esforço contínuo, garanti que as entregas fossem feitas com qualidade, respeitando os prazos estabelecidos.</li> 
+  <li><strong>Adaptabilidade</strong> – Tive que lidar com ferramentas e frameworks até então desconhecidos, como o Spring Boot e o Docker. Para acompanhar o ritmo da equipe e contribuir efetivamente, dediquei-me a aprender rapidamente por meio de cursos, documentação oficial e tutoriais. Essa capacidade de aprender e aplicar novos conhecimentos foi decisiva para minha evolução no projeto.</li> </ul>
 
 ### Dificuldades enfrentadas
 Por ter sido a primeira experiência no desenvolvimento de API com cliente de verdade, um ambiente de trabalho mais próximo do profissional senti muita dificuldade e dúvida se conseguiria entregar todas as demandas. Embora essas adversidades consegui aprender a como estar em um ambiente de trabalho organizado, como realizar de forma mais eficiente desenvolvimento de controllers, services, manipulação de banco de dados e criação de páginas web usando frameworks.
