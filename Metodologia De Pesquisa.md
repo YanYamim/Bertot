@@ -56,25 +56,14 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
 </ul>
 
 ### Hard Skills
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="spring logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="40" alt="vuejs logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-</div>
+<ul> 
+  <li><strong>Git</strong> – Utilizado para versionamento de código durante todo o projeto. Realizamos ramificações com `feature branches`, pull requests e resolução de conflitos para garantir um fluxo de desenvolvimento colaborativo e organizado.</li> 
+  <li><strong>Java</strong> – Linguagem principal utilizada para desenvolver a lógica de negócio da aplicação, especialmente no back-end da API. Criamos classes, métodos e estruturas robustas para manipulação de dados e regras de negócio.</li> 
+  <li><strong>Spring Boot</strong> – Framework utilizado para acelerar o desenvolvimento do back-end da aplicação. Com ele, estruturamos os controladores, serviços e repositórios, além de configurar a API REST de forma eficiente e padronizada.</li> 
+  <li><strong>PostgreSQL</strong> – Banco de dados relacional adotado no projeto. Criamos tabelas, definimos relacionamentos com chaves estrangeiras e escrevemos consultas SQL para garantir a persistência e integridade dos dados.</li>
+  <li><strong>Docker</strong> – Usado para criar contêineres da aplicação, facilitando o ambiente de desenvolvimento e testes. Criamos `Dockerfiles` e utilizamos `docker-compose` para orquestrar serviços como a API e o banco de dados.</li>
+  <li><strong>Vue.js</strong> – Framework JavaScript usado no desenvolvimento da interface web. Criamos componentes reutilizáveis e reativos que consumiam os dados da API, garantindo uma experiência fluida ao usuário.</li> 
+</ul>
 
 ###
 
