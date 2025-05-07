@@ -68,7 +68,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Possibilidade de relacionar várias tags a um portal de notícia tanto no cadastro quanto na edição
     <details>
       <summary>Ver detalhes</summary>
-      No front-end, utilizei <code>&lt;select multiple&gt;</code> junto com <code>v-model</code> para permitir que o usuário selecionasse múltiplas tags. Essas IDs eram enviadas para a API durante o envio do formulário. No back-end, adaptei o model <code>Portal</code> para conter uma lista de objetos <code>Tag</code>, usando <code>@ManyToMany</code>, e ajustei os DTOs para incluir a lista de IDs de tags ao criar ou editar um portal.
+ No front-end, implementei um método responsável por buscar todas as tags salvas no banco de dados e exibi-las em um campo de seleção múltipla. Utilizeio `axios` para consumir a API de listagem de tags com os nomes e IDs. Também criei uma estrutura reativa para armazenar as tags selecionadas pelo usuário. Essas informações eram enviadas no corpo da requisição `POST` ou `PUT` ao cadastrar ou editar um portal. Além disso, adaptei os DTOs para aceitar e retornar listas de IDs de tags associadas a cada portal.    
     </details>
   </li>
 
@@ -76,7 +76,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Correção de bug envolvendo registro de portais
     <details>
       <summary>Ver detalhes</summary>
-      Corrigi um bug onde os dados de um portal não eram persistidos corretamente por conta da ausência de validação nas tags associadas. Ajustei o serviço do Spring para verificar se as tags existiam no banco antes de associá-las, usando <code>findById</code> em loop com <code>Optional</code>. Adicionei lógica para lançar erro 404 se uma tag informada não existisse, garantindo consistência referencial.
+      Corrigi um bug no cadastro de portais que a checkbox sempre dava como ativa, mas precisava ter a opção de ativar ou desativar o portal de notícia
     </details>
   </li>
 
@@ -84,7 +84,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Exibição do conteúdo da notícia através de um pop-up
     <details>
       <summary>Ver detalhes</summary>
-      No front-end Vue.js, implementei uma modal reutilizável com <code>&lt;dialog&gt;</code> e transições para exibir o conteúdo completo da notícia. Cada card de notícia tinha um botão "Ver mais" que acionava a exibição do pop-up com o corpo da notícia. Os dados eram passados como props para o componente da modal e renderizados dinamicamente com Vue.
+      No front-end Vue.js, implementei uma modal reutilizável com <code>&lt;dialog&gt;</code> e transições para exibir o conteúdo completo da notícia. Cada card de notícia tinha um botão "Exibir notícia" que acionava a exibição do pop-up com o corpo da notícia. Os dados eram passados como props para o componente da modal e renderizados dinamicamente com Vue.
     </details>
   </li>
 </ul>
