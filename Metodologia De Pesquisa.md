@@ -48,21 +48,56 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
 
 ### Contribuições Pessoais
 <ul>
-<li>Método responsável pelo cadastro de Tags e de Portais</li> 
-<li>Página web que cadastra Tags e de Portais</li> 
-<li>possibilidade de relacionar várias tags a um portal de notícia tanto no cadastro quanto na edição</li> 
-<li>correção de bug envolvento registro de portais</li> 
-<li>exibição do conteúdo da notícia através de um pop-up</li>
+  <li>
+    Método responsável pelo cadastro de Tags e de Portais
+    <details>
+      <summary>Ver detalhes</summary>
+      No back-end, desenvolvi os métodos `POST` em controladores Spring Boot (`TagController` e `PortalController`) para receber dados JSON e persistir as entidades no banco usando JPA. Utilizei as anotações `@RequestBody` e `@PostMapping`, garantindo validação e integridade dos dados. No repositório, empreguei `save()` do `JpaRepository`. Isso garantiu a criação de novos registros tanto de tags quanto de portais de forma segura.
+    </details>
+  </li>
+
+  <li>
+    Página web que cadastra Tags e de Portais
+    <details>
+      <summary>Ver detalhes</summary>
+      No front-end, criei componentes Vue separados para o cadastro de tags e portais. Utilizei `v-model` para fazer o binding dos inputs com os dados e `axios` para enviar os dados via requisições `POST` para os respectivos endpoints da API. Os formulários foram montados com HTML semântico, CSS para estilo, e validadores simples para impedir envios incompletos.
+    </details>
+  </li>
+
+  <li>
+    Possibilidade de relacionar várias tags a um portal de notícia tanto no cadastro quanto na edição
+    <details>
+      <summary>Ver detalhes</summary>
+      No front-end, utilizei `<select multiple>` junto com `v-model` para permitir que o usuário selecionasse múltiplas tags. Essas IDs eram enviadas para a API durante o envio do formulário. No back-end, adaptei o model `Portal` para conter uma lista de objetos `Tag`, usando `@ManyToMany`, e ajustei os DTOs para incluir a lista de IDs de tags ao criar ou editar um portal.
+    </details>
+  </li>
+
+  <li>
+    Correção de bug envolvendo registro de portais
+    <details>
+      <summary>Ver detalhes</summary>
+      Corrigi um bug onde os dados de um portal não eram persistidos corretamente por conta da ausência de validação nas tags associadas. Ajustei o serviço do Spring para verificar se as tags existiam no banco antes de associá-las, usando `findById` em loop com `Optional`. Adicionei lógica para lançar erro 404 se uma tag informada não existisse, garantindo consistência referencial.
+    </details>
+  </li>
+
+  <li>
+    Exibição do conteúdo da notícia através de um pop-up
+    <details>
+      <summary>Ver detalhes</summary>
+      No front-end Vue.js, implementei uma modal reutilizável com `<dialog>` e transições para exibir o conteúdo completo da notícia. Cada card de notícia tinha um botão "Ver mais" que acionava a exibição do pop-up com o corpo da notícia. Os dados eram passados como props para o componente da modal e renderizados dinamicamente com Vue.
+    </details>
+  </li>
 </ul>
+
 
 ### Hard Skills
 <ul> 
-  <li><strong>Git</strong> – Utilizado para versionamento de código durante todo o projeto. Realizamos ramificações com `feature branches`, pull requests e resolução de conflitos para garantir um fluxo de desenvolvimento colaborativo e organizado.</li> 
-  <li><strong>Java</strong> – Linguagem principal utilizada para desenvolver a lógica de negócio da aplicação, especialmente no back-end da API. Criamos classes, métodos e estruturas robustas para manipulação de dados e regras de negócio.</li> 
-  <li><strong>Spring Boot</strong> – Framework utilizado para acelerar o desenvolvimento do back-end da aplicação. Com ele, estruturamos os controladores, serviços e repositórios, além de configurar a API REST de forma eficiente e padronizada.</li> 
-  <li><strong>PostgreSQL</strong> – Banco de dados relacional adotado no projeto. Criamos tabelas, definimos relacionamentos com chaves estrangeiras e escrevemos consultas SQL para garantir a persistência e integridade dos dados.</li>
-  <li><strong>Docker</strong> – Usado para criar contêineres da aplicação, facilitando o ambiente de desenvolvimento e testes. Criamos `Dockerfiles` e utilizamos `docker-compose` para orquestrar serviços como a API e o banco de dados.</li>
-  <li><strong>Vue.js</strong> – Framework JavaScript usado no desenvolvimento da interface web. Criamos componentes reutilizáveis e reativos que consumiam os dados da API, garantindo uma experiência fluida ao usuário.</li> 
+  <li><strong>Git</strong> – Utilizado diariamente para versionar o código-fonte da aplicação. Trabalhamos com ramificações específicas para funcionalidades (feature branches), criamos pull requests para revisão de código e resolvemos conflitos em equipe, garantindo organização e segurança no controle de versões do projeto colaborativo.</li> 
+  <li><strong>Java</strong> – Linguagem utilizada para construir toda a lógica de negócio da aplicação, como o tratamento das requisições do front-end, a integração com o banco de dados e o processamento das notícias obtidas pelo crawler. Desenvolvemos classes para entidades como Tag, Portal e Notícia, além de serviços para realizar a associação e busca por essas entidades.</li>
+  <li><strong>Spring Boot</strong> – Framework usado para estruturar a API REST que permitia ao front-end consultar e cadastrar dados como notícias, tags e portais. Com ele, criamos os controladores, endpoints, camadas de serviço e repositórios JPA para gerenciar o fluxo completo de dados entre o crawler, o banco e o front-end.</li>
+  <li><strong>PostgreSQL</strong> – Serviu como o banco de dados da aplicação. Modelamos tabelas como `noticia`, `portal`, `tag` e tabelas de associação para representar os relacionamentos entre elas. Utilizamos SQL e JPA para armazenar as notícias capturadas pelo crawler e consultá-las conforme as tags e portais selecionados pelo usuário.</li>
+  <li><strong>Docker</strong> – Empregado para padronizar o ambiente da aplicação. Criamos contêineres para o back-end, banco de dados e crawler, utilizando `Dockerfile` e `docker-compose` para garantir que toda a equipe pudesse rodar o sistema localmente de forma uniforme, além de facilitar o deploy.</li>
+  <li><strong>Vue.js</strong> – Utilizado na construção da interface web da aplicação. Desenvolvemos componentes que permitiam ao usuário cadastrar e visualizar tags, portais e resultados de busca. A interface consumia os dados da API de forma reativa e dinâmica, possibilitando a busca de notícias em tempo real a partir de critérios definidos.</li>
 </ul>
 
 ###
