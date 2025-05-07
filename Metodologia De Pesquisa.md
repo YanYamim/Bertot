@@ -52,7 +52,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Método responsável pelo cadastro de Tags e de Portais
     <details>
       <summary>Ver detalhes</summary>
-      No back-end, desenvolvi os métodos `POST` em controladores Spring Boot (`TagController` e `PortalController`) para receber dados JSON e persistir as entidades no banco usando JPA. Utilizei as anotações `@RequestBody` e `@PostMapping`, garantindo validação e integridade dos dados. No repositório, empreguei `save()` do `JpaRepository`. Isso garantiu a criação de novos registros tanto de tags quanto de portais de forma segura.
+      No back-end, desenvolvi os métodos <code>POST</code> em controladores Spring Boot (<code>TagController</code> e <code>PortalController</code>) para receber dados JSON e persistir as entidades no banco usando JPA. Utilizei as anotações <code>@RequestBody</code> e <code>@PostMapping</code>, garantindo validação e integridade dos dados. No repositório, empreguei <code>save()</code> do <code>JpaRepository</code>. Isso garantiu a criação de novos registros tanto de tags quanto de portais de forma segura.
     </details>
   </li>
 
@@ -60,7 +60,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Página web que cadastra Tags e de Portais
     <details>
       <summary>Ver detalhes</summary>
-      No front-end, criei componentes Vue separados para o cadastro de tags e portais. Utilizei `v-model` para fazer o binding dos inputs com os dados e `axios` para enviar os dados via requisições `POST` para os respectivos endpoints da API. Os formulários foram montados com HTML semântico, CSS para estilo, e validadores simples para impedir envios incompletos.
+      No front-end, criei componentes Vue separados para o cadastro de tags e portais. Utilizei <code>v-model</code> para fazer o binding dos inputs com os dados e <code>axios</code> para enviar os dados via requisições <code>POST</code> para os respectivos endpoints da API. Os formulários foram montados com HTML semântico, CSS para estilo, e validadores simples para impedir envios incompletos.
     </details>
   </li>
 
@@ -68,7 +68,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Possibilidade de relacionar várias tags a um portal de notícia tanto no cadastro quanto na edição
     <details>
       <summary>Ver detalhes</summary>
-      No front-end, utilizei `<select multiple>` junto com `v-model` para permitir que o usuário selecionasse múltiplas tags. Essas IDs eram enviadas para a API durante o envio do formulário. No back-end, adaptei o model `Portal` para conter uma lista de objetos `Tag`, usando `@ManyToMany`, e ajustei os DTOs para incluir a lista de IDs de tags ao criar ou editar um portal.
+      No front-end, utilizei <code>&lt;select multiple&gt;</code> junto com <code>v-model</code> para permitir que o usuário selecionasse múltiplas tags. Essas IDs eram enviadas para a API durante o envio do formulário. No back-end, adaptei o model <code>Portal</code> para conter uma lista de objetos <code>Tag</code>, usando <code>@ManyToMany</code>, e ajustei os DTOs para incluir a lista de IDs de tags ao criar ou editar um portal.
     </details>
   </li>
 
@@ -76,7 +76,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Correção de bug envolvendo registro de portais
     <details>
       <summary>Ver detalhes</summary>
-      Corrigi um bug onde os dados de um portal não eram persistidos corretamente por conta da ausência de validação nas tags associadas. Ajustei o serviço do Spring para verificar se as tags existiam no banco antes de associá-las, usando `findById` em loop com `Optional`. Adicionei lógica para lançar erro 404 se uma tag informada não existisse, garantindo consistência referencial.
+      Corrigi um bug onde os dados de um portal não eram persistidos corretamente por conta da ausência de validação nas tags associadas. Ajustei o serviço do Spring para verificar se as tags existiam no banco antes de associá-las, usando <code>findById</code> em loop com <code>Optional</code>. Adicionei lógica para lançar erro 404 se uma tag informada não existisse, garantindo consistência referencial.
     </details>
   </li>
 
@@ -84,7 +84,7 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
     Exibição do conteúdo da notícia através de um pop-up
     <details>
       <summary>Ver detalhes</summary>
-      No front-end Vue.js, implementei uma modal reutilizável com `<dialog>` e transições para exibir o conteúdo completo da notícia. Cada card de notícia tinha um botão "Ver mais" que acionava a exibição do pop-up com o corpo da notícia. Os dados eram passados como props para o componente da modal e renderizados dinamicamente com Vue.
+      No front-end Vue.js, implementei uma modal reutilizável com <code>&lt;dialog&gt;</code> e transições para exibir o conteúdo completo da notícia. Cada card de notícia tinha um botão "Ver mais" que acionava a exibição do pop-up com o corpo da notícia. Os dados eram passados como props para o componente da modal e renderizados dinamicamente com Vue.
     </details>
   </li>
 </ul>
