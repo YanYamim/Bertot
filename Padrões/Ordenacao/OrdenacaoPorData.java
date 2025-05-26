@@ -6,6 +6,9 @@ import java.util.List;
 
 import Tarefa.TarefaComponent;
 
+/**
+ * Estratégia de ordenação por data (implementação do padrão Strategy).
+ */
 public class OrdenacaoPorData implements OrdenacaoStrategy{
     
     @Override

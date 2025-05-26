@@ -5,6 +5,12 @@ import java.util.List;
 
 import Notificacao.ObserverTarefa;
 
+/**
+ * Representa uma tarefa composta (nó no padrão Composite).
+ * Pode conter subtarefas e propaga execução e notificações.
+ * Também utiliza o padrão Observer.
+ */
+
 public class TarefaComposta implements TarefaComponent {
     
     private String nome;
@@ -19,6 +25,9 @@ public class TarefaComposta implements TarefaComponent {
         this.observadores = observadores;
     }
 
+    /**
+     * Executa todas as subtarefas e notifica os observadores.
+     */
     @Override
     public void executar() {
         for (TarefaComponent tarefa : subtarefas) {
@@ -26,7 +35,10 @@ public class TarefaComposta implements TarefaComponent {
         }
         notificarObservers();
     }
-
+    
+    /**
+     * Adiciona um observador à tarefa composta e a todas as subtarefas.
+     */
     @Override
     public void adicionarObserver(ObserverTarefa observer) {
         observadores.add(observer);
@@ -58,6 +70,11 @@ public class TarefaComposta implements TarefaComponent {
     @Override
     public Integer getPrioridade() {
         return prioridade;
+    }
+
+    @Override
+    public void setPrioridade(Integer prioridade) {
+        this.prioridade = prioridade;
     }
 
     @Override

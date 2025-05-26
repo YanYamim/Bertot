@@ -4,6 +4,11 @@ import Tarefa.TarefaComponent;
 import Tarefa.TarefaComposta;
 import Tarefa.TarefaSimples;
 
+
+/**
+ * Implementa o padrão Observer.
+ * Envia uma "notificação" por e-mail (simulada com print) quando uma tarefa é concluída.
+ */
 public class NotificadorEmail implements ObserverTarefa {
     
     private String email;
@@ -12,6 +17,9 @@ public class NotificadorEmail implements ObserverTarefa {
         this.email = email;
     }
 
+    /**
+     * Atualiza quando uma tarefa for concluída e envia a notificação.
+     */
      @Override
     public void atualizar(TarefaComponent tarefa) {
         if (tarefa instanceof TarefaSimples) {

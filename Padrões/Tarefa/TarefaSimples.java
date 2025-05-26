@@ -5,6 +5,10 @@ import java.util.List;
 
 import Notificacao.ObserverTarefa;
 
+/**
+ * Representa uma tarefa individual (folha do padrão Composite).
+ * Também implementa o padrão Observer, notificando observadores ao ser concluída.
+ */
 public class TarefaSimples implements TarefaComponent{
     
     private String nome;
@@ -19,6 +23,9 @@ public class TarefaSimples implements TarefaComponent{
         this.observers = observers;
     }
 
+/**
+ * Executa a tarefa simples, marca como concluída e notifica os observadores.
+ */
     @Override
     public void executar() {
         this.concluido = true;
@@ -30,6 +37,10 @@ public class TarefaSimples implements TarefaComponent{
         observers.add(observer);
     }
 
+
+/**
+ * Notifica todos os observadores cadastrados.
+ */
     private void notificarObservers() {
         for(ObserverTarefa observer : observers) {
             observer.atualizar(this);
@@ -48,6 +59,11 @@ public class TarefaSimples implements TarefaComponent{
     @Override
     public Integer getPrioridade() {
         return prioridade;
+    }
+
+    @Override
+    public void setPrioridade(Integer prioridade) {
+        this.prioridade = prioridade;
     }
 
     @Override
